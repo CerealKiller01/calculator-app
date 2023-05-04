@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body id="bdy">
+    <div class="contenedor">
+      <div class="calcSuperior">
+        <h1 class="calcSuperior__titulo" id="calcTitulo">Calc</h1>
+        <div class="calcSuperiorOpciones">
+          <div class="calcSuperiorOpcionesPos">
+          <p class="calcSuperiorOpcionesPos__numeros" id="posNumerosUno">1</p>
+          <p class="calcSuperiorOpcionesPos__numeros" id="posNumerosDos">2</p>
+          <p class="calcSuperiorOpcionesPos__numeros" id="posNumerosTres">3</p>
+        </div>
+          <input type="range" min="1" max="3" class="calcSuperiorOpciones__range" id="range"/>
+        </div>
+      </div>
+
+      <div class="calcDisplay" id="displayCalc">
+        <h1 class="calcDisplay__numeros" id="ndisplay">0</h1>
+      </div>
+
+      <div class="calcConte" id="calcConteBtn">
+        <div class="calcConteBotones">
+          <button class="calcConteBotones__btn ">7</button>
+          <button class="calcConteBotones__btn " >8</button>
+          <button class="calcConteBotones__btn ">9</button>
+          <button class="calcConteBotones__btn calcConteBotones__btn--del" id="del">DEL</button>
+          <button class="calcConteBotones__btn ">4</button>
+          <button class="calcConteBotones__btn ">5</button>
+          <button class="calcConteBotones__btn ">6</button>
+          <button class="calcConteBotones__btn ">+</button>
+          <button class="calcConteBotones__btn ">1</button>
+          <button class="calcConteBotones__btn ">2</button>
+          <button class="calcConteBotones__btn ">3</button>
+          <button class="calcConteBotones__btn ">-</button>
+          <button class="calcConteBotones__btn ">.</button>
+          <button class="calcConteBotones__btn ">0</button>
+          <button class="calcConteBotones__btn ">/</button>
+          <button class="calcConteBotones__btn ">*</button>
+          <button class="calcConteBotones__btn calcConteBotones__btn--reset" id="reset">RESET</button>
+          <button class="calcConteBotones__btn calcConteBotones__btn--resultado" id="resultado">=</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
